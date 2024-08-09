@@ -10,7 +10,7 @@ pnpm i
 
 ## Build
 
-It will print the file size of the `css` and `sva` functions.
+It will print the file size of the bundled `css` and `sva` functions, and the size of the output CSS file.
 
 ```bash
 pnpm build
