@@ -16,8 +16,6 @@ It will print the file size of the `css` and `sva` functions.
 pnpm build
 ```
 
-> You can enable the [minimal setup](https://panda-css.com/docs/guides/minimal-setup) in `panda.config.mjs` to test the file size of the minimal setup.
-
 ## File size
 
 ### Default setup
@@ -32,6 +30,8 @@ pnpm build
 > Note: `sva` is the largest file because it imports all other helper functions (`css`, `cva`, and `cx`).
 
 ### Minimal setup
+
+> You can enable the [minimal setup](https://panda-css.com/docs/guides/minimal-setup) in `panda.config.mjs` to test the file size of the minimal setup.
 
 | File                                                                                                    | Size (Minified + Gzipped) |
 | ------------------------------------------------------------------------------------------------------- | ------------------------- |
