@@ -20,6 +20,8 @@ const minimalSetup = {
   },
 };
 
+const useMinimalSetup = false;
+
 export default defineConfig({
   // Whether to use css reset
   preflight: false,
@@ -31,7 +33,7 @@ export default defineConfig({
   hash: false,
 
   // Whether to use the minimal setup
-  // ...minimalSetup,
+  ...(useMinimalSetup ? minimalSetup : {}),
 
   // Where to look for your css declarations
   include: ["./src/**/*.{js,jsx,ts,tsx}", "./pages/**/*.{js,jsx,ts,tsx}"],
