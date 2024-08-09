@@ -1,8 +1,17 @@
 #!/bin/bash
 
 # Define the source and temporary compressed file
-SOURCE_FILE="dist/styled-system/styles.css"
-TEMP_FILE="/tmp/styles.css.gz"
+
+#!/bin/bash
+
+# Check if the filename is passed as an argument
+if [ -z "$1" ]; then
+    echo "Usage: $0 <filename>"
+    exit 1
+fi
+
+# Assign the first argument to SOURCE_FILE
+SOURCE_FILE="$1"
 
 # Get the original file size in bytes
 original_size=$(stat -f%z "$SOURCE_FILE")
