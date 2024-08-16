@@ -22,10 +22,10 @@ pnpm build
 
 | File                                                                                                    | Size (Minified + Gzipped)                 |
 | ------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| dist/styled-system/css/css.js                                                                           | 5.0KiB                                    |
-| dist/styled-system/css/sva.js                                                                           | 5.9KiB                                    |
+| dist/styled-system/css/css.js                                                                           | 4.9KiB                                    |
+| dist/styled-system/css/sva.js                                                                           | 5.8KiB                                    |
 | dist/styled-system/styles.css (with [hash](https://panda-css.com/docs/references/config#hash) disabled) | 14.9KiB -> 3.8KiB (compression rate: 74%) |
-| dist/styled-system/styles.css (with [hash](https://panda-css.com/docs/references/config#hash) enabled)  | 11.4KiB -> 5.0KiB (compression rate: 56%) |
+| dist/styled-system/styles.css (with [hash](https://panda-css.com/docs/references/config#hash) enabled)  | 11.5KiB -> 5.0KiB (compression rate: 56%) |
 
 > Note: `sva` is the largest file because it imports all other helper functions (`css`, `cva`, and `cx`).
 
@@ -35,6 +35,6 @@ pnpm build
 
 | File                                                                                                    | Size (Minified + Gzipped) |
 | ------------------------------------------------------------------------------------------------------- | ------------------------- |
-| dist/styled-system/css/css.js                                                                           | 1.7KiB                    |
-| dist/styled-system/css/sva.js                                                                           | 2.6KiB                    |
-| dist/styled-system/styles.css (with [hash](https://panda-css.com/docs/references/config#hash) disabled) | 198B                      |
+| dist/styled-system/css/css.js                                                                           | 1.6KiB                    |
+| dist/styled-system/css/sva.js                                                                           | 2.5KiB                    |
+| dist/styled-system/styles.css (with [hash](https://panda-css.com/docs/references/config#hash) disabled) | 0.2KiB                    |

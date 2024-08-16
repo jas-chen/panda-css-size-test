@@ -1,5 +1,13 @@
 import { defineConfig } from "@pandacss/dev";
 
+const theme = {
+  tokens: {
+    colors: {
+      primary: { value: "#ff0000" },
+    },
+  },
+};
+
 // https://panda-css.com/docs/guides/minimal-setup
 const minimalSetup = {
   // Remove the default design tokens
@@ -11,13 +19,7 @@ const minimalSetup = {
       values: "colors",
     },
   },
-  theme: {
-    tokens: {
-      colors: {
-        primary: { value: "#ff0000" },
-      },
-    },
-  },
+  theme,
 };
 
 const useMinimalSetup = false;
@@ -33,7 +35,13 @@ export default defineConfig({
   hash: false,
 
   // Whether to use the minimal setup
-  ...(useMinimalSetup ? minimalSetup : {}),
+  ...(useMinimalSetup
+    ? minimalSetup
+    : {
+        theme: {
+          extend: theme,
+        },
+      }),
 
   // Where to look for your css declarations
   include: ["./src/**/*.{js,jsx,ts,tsx}", "./pages/**/*.{js,jsx,ts,tsx}"],
